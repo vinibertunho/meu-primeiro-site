@@ -1,0 +1,19 @@
+/* RESET DO CSS */    * {
+    margin: 0px;
+    padding: 0px;
+   color: aliceblue;
+}
+
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 , p {
+    text-align: center;
+
+}
+header{
+    background-color: rgb(109, 111, 233);
+    padding: 73px;
+   
+}
