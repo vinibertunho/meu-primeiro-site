@@ -10,10 +10,14 @@ body {
 }
 h1 , p {
     text-align: center;
-
+margin: 10px;
 }
 header{
     background-color: rgb(109, 111, 233);
     padding: 73px;
    
+}
+main {
+    height: 600px;
+    background-color: rgba(96, 102, 134, 0.747);
 }
