@@ -1,23 +1,49 @@
-/* RESET DO CSS */    * {
-    margin: 0px;
-    padding: 0px;
-   color: aliceblue;
+* {
+  margin: 0px;
+  padding: 0px;
+  color: #f7f6f3; /* tom off-white suave */
+  box-sizing: border-box;
 }
 
 body {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #222831;
+}
 
-    font-family: Arial, Helvetica, sans-serif;
+header {
+  background-color: #393e46;
+  padding: 73px;
+  text-align: center;
 }
-h1 , p {
-    text-align: center;
-margin: 10px;
-}
-header{
-    background-color: rgb(109, 111, 233);
-    padding: 73px;
-   
-}
+
 main {
-    height: 600px;
-    background-color: rgba(96, 102, 134, 0.747);
+  background-color: #30475e;
+  color: #f7f6f3;
+  flex: 1;
+  padding: 40px 38px;
+}
+
+#sobre-mim {
+  display: block;
+  background-color: #57606f;
+  width: 80%;
+  margin: 0 auto;
+  padding: 40px;
+  border-radius: 18px;
+  box-shadow: 0 8px 24px 0 rgba(44, 21, 77, 0.15);
+}
+
+#titulo-sobre-mim {
+  font-size: 30px;
+  margin-bottom: 16px;
+  border-bottom: 2px solid #ffffff;
+}
+
+.texto-sobre-mim {
+  font-size: 16px;
+  margin-bottom: 16px;
+  border-bottom: #222831;
 }
