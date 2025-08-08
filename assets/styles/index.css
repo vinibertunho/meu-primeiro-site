@@ -1,49 +1,118 @@
 * {
-  margin: 0px;
-  padding: 0px;
-  color: #f7f6f3; /* tom off-white suave */
+  margin: 0;
+  padding: 0;
+  color: #f3eaff; /* tom suave claro */
   box-sizing: border-box;
+  text-shadow: 1px 1px 2px #18182470; /* sombra suave em todos os textos */
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-color: #222831;
+  background: linear-gradient(135deg, #1e1e2f 0%, #2c2c3e 100%);
+}
+
+h1,
+p {
+  text-align: center;
+  margin: 10px;
+  color: #e0d7ff;
+  text-shadow: 2px 2px 7px #19192a86, 0 1px 0 #00adb5a0; /* sombra defrade moderna */
 }
 
 header {
-  background-color: #393e46;
+  background: linear-gradient(90deg, #2c2c3e 0%, #34344a 100%);
   padding: 73px;
   text-align: center;
+  box-shadow: 0 8px 32px 0 rgba(44, 21, 77, 0.45), 0 1.5px 6px 0 #00adb570;
+  position: relative;
+  z-index: 2;
 }
 
 main {
-  background-color: #30475e;
-  color: #f7f6f3;
+  background: linear-gradient(135deg, #34344a 0%, #44475a 100%);
+  color: #f3eaff;
   flex: 1;
-  padding: 40px 38px;
+  padding: 25px 40px;
+  box-shadow: 0 6px 30px 0 #1e1e2f60 inset;
 }
 
 #sobre-mim {
   display: block;
-  background-color: #57606f;
+  background: linear-gradient(120deg, #44475a 0%, #2c2c3e 100%);
   width: 80%;
   margin: 0 auto;
   padding: 40px;
   border-radius: 18px;
-  box-shadow: 0 8px 24px 0 rgba(44, 21, 77, 0.15);
+  box-shadow: 0 16px 60px 0 #000e2fbe, 0 1px 8px #00adb580;
+  backdrop-filter: blur(2px);
+  position: relative;
+  z-index: 1;
+  margin-bottom: 50px;
 }
 
 #titulo-sobre-mim {
   font-size: 30px;
   margin-bottom: 16px;
-  border-bottom: 2px solid #ffffff;
+  border-bottom: 2px solid #00adb5; /* destaque moderno */
+  color: #f3eaff;
+  text-shadow: 2px 2px 16px #00adb5a0, 1px 1px 3px #19192a86;
 }
 
 .texto-sobre-mim {
   font-size: 16px;
   margin-bottom: 16px;
-  border-bottom: #222831;
+  border-bottom: 1px solid #2c2c3e;
+  color: #e0d7ff;
+  text-shadow: 1px 1px 8px #2c2c3e80;
 }
+
+#meus-hobbies {
+  background: linear-gradient(120deg, #44475a 0%, #2c2c3e 100%);
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 18px;
+  box-shadow: 0 16px 60px 0 #000e2fbe, 0 1px 8px #00adb580;
+  backdrop-filter: blur(2px);
+  position: relative;
+  z-index: 1;
+  margin-bottom: 16px;
+}
+
+#titulo-meus-hobbies {
+  font-size: 30px;
+  margin-bottom: 16px;
+  border-bottom: 2px solid #00adb5;
+  color: #f3eaff;
+  text-shadow: 2px 2px 16px #00adb5a0, 1px 1px 3px #19192a86;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 6px;              
+    margin: 0 0 0 0;
+  }
+  
+  li {
+    background: rgba(44, 44, 62, 0.85); 
+    padding: 6px 15px;                  
+    border-left: 4px solid #00adb5;     
+    border-radius: 6px;
+    font-size: 16px;
+    min-width: 180px;                  
+    color: #f3eaff;                     
+    box-shadow: 0 2px 12px 0 #1e1e2f40;
+    transition: all 0.3s cubic-bezier(0.4,0,0.2,1);
+  }
+  
+  li:hover {
+    background: rgba(0, 173, 181, 0.20);
+    color: #f3eaff;
+    transform: translateY(-4px) scale(1.03);
+    box-shadow: 0 5px 20px 0 #00adb540, 0 1px 4px 0 #19192a60;
+  }
