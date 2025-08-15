@@ -139,4 +139,71 @@ ul {
 
     }
   }
-  
+  #contato {
+    background: linear-gradient(120deg, #44475a 0%, #2c2c3e 100%);
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 18px;
+    box-shadow: 0 16px 60px 0 #000e2fbe, 0 1px 8px #00adb580;
+    backdrop-filter: blur(2px);
+    position: relative;
+    z-index: 1;
+    margin-bottom: 50px;
+  }
+  #titulo-contato {
+    font-size: 30px;
+    margin-bottom: 16px;
+    border-bottom: 2px solid #00adb5; /* destaque moderno */
+    color: #f3eaff;
+    text-shadow: 2px 2px 16px #00adb5a0, 1px 1px 3px #19192a86;
+  }
+  .texto-contato {
+    font-size: 16px;
+    margin-bottom: 16px;
+    color: #e0d7ff;
+    text-shadow: 1px 1px 8px #2c2c3e80;
+  }
+  .texto-contato a {
+    color: #00adb5;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  .texto-contato a:hover {
+    color: #00adb5a0;
+    text-decoration: underline;
+  }
+  footer {
+    background: linear-gradient(90deg, #2c2c3e 0%, #34344a 100%);
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 -8px 32px 0 rgba(44, 21, 77, 0.45), 0 -1.5px 6px 0 #00adb570;
+    position: relative;
+    z-index: 2;
+    color: #f3eaff;
+    font-size: 14px;
+    margin-top: auto; /* para empurrar o footer para baixo */
+  }
+footer a {
+    color: #00adb5;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+footer a:hover {
+    color: #00adb5a0;
+    text-decoration: underline;
+  }
+footer p {
+    margin: 0;
+    font-size: 14px;
+    color: #f3eaff;
+    text-shadow: 1px 1px 2px #18182470; /* sombra suave no texto do footer */
+  }
+footer span {
+    color: #00adb5;
+    font-weight: bold;
+  }
+footer span:hover {
+    color: #00adb5a0;
+    text-decoration: underline;
+  }
