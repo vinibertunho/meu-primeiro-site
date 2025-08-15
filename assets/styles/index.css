@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +8,7 @@
 }
 
 body {
-  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  font-family: saira, Helvetica, sans-serif;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -29,6 +30,8 @@ header {
   box-shadow: 0 8px 32px 0 rgba(44, 21, 77, 0.45), 0 1.5px 6px 0 #00adb570;
   position: relative;
   z-index: 2;
+  color: #f3eaff;
+  font-size: 24px;
 }
 
 main {
@@ -37,6 +40,8 @@ main {
   flex: 1;
   padding: 25px 40px;
   box-shadow: 0 6px 30px 0 #1e1e2f60 inset;
+  border-radius: 12px;
+  margin: 20px auto;
 }
 
 #sobre-mim {
@@ -59,6 +64,8 @@ main {
   border-bottom: 2px solid #00adb5; /* destaque moderno */
   color: #f3eaff;
   text-shadow: 2px 2px 16px #00adb5a0, 1px 1px 3px #19192a86;
+  text-align: center;
+  margin-top: 0;
 }
 
 .texto-sobre-mim {
@@ -67,6 +74,8 @@ main {
   border-bottom: 1px solid #2c2c3e;
   color: #e0d7ff;
   text-shadow: 1px 1px 8px #2c2c3e80;
+  line-height: 1.6;
+  padding-bottom: 16px;
 }
 
 #meus-hobbies {
@@ -79,7 +88,7 @@ main {
   backdrop-filter: blur(2px);
   position: relative;
   z-index: 1;
-  margin-bottom: 16px;
+  margin-bottom: 48px;
 }
 
 #titulo-meus-hobbies {
@@ -88,122 +97,124 @@ main {
   border-bottom: 2px solid #00adb5;
   color: #f3eaff;
   text-shadow: 2px 2px 16px #00adb5a0, 1px 1px 3px #19192a86;
+  text-align: center;
 }
 
 ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    gap: 6px;              
-    margin: 0 0 0 0;
-  }
-  
-  li {
-    background: rgba(44, 44, 62, 0.85); 
-    padding: 6px 15px;                  
-    border-left: 4px solid #00adb5;     
-    border-radius: 6px;
-    font-size: 16px;
-    min-width: 180px;                  
-    color: #f3eaff;                     
-    box-shadow: 0 2px 12px 0 #1e1e2f40;
-    transition: all 0.3s cubic-bezier(0.4,0,0.2,1);
-  }
-  
-  li:hover {
-    background: rgba(0, 173, 181, 0.20);
-    color: #f3eaff;
-    transform: translateY(-4px) scale(1.03);
-    box-shadow: 0 5px 20px 0 #00adb540, 0 1px 4px 0 #19192a60;
-  }
-  body {
-    font-size: 16px;
-    padding: 10px;
-  }
-  
-  .container {
-    width: 100%;
-    max-width: 600px;
-    margin: auto;
-    padding: 0 20px;
-  }
-  
-  @media (max-width: 600px) {
-    body {
-      font-size: 14px;
-      padding: 5px;
-    }
-    .container {
-      max-width: 100%;
-      padding: 0 10px;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 6px;
+  margin: 0 0 0 0;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
-    }
-  }
-  #contato {
-    background: linear-gradient(120deg, #44475a 0%, #2c2c3e 100%);
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px;
-    border-radius: 18px;
-    box-shadow: 0 16px 60px 0 #000e2fbe, 0 1px 8px #00adb580;
-    backdrop-filter: blur(2px);
-    position: relative;
-    z-index: 1;
-    margin-bottom: 50px;
-  }
-  #titulo-contato {
-    font-size: 30px;
-    margin-bottom: 16px;
-    border-bottom: 2px solid #00adb5; /* destaque moderno */
-    color: #f3eaff;
-    text-shadow: 2px 2px 16px #00adb5a0, 1px 1px 3px #19192a86;
-  }
-  .texto-contato {
-    font-size: 16px;
-    margin-bottom: 16px;
-    color: #e0d7ff;
-    text-shadow: 1px 1px 8px #2c2c3e80;
-  }
-  .texto-contato a {
-    color: #00adb5;
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-  .texto-contato a:hover {
-    color: #00adb5a0;
-    text-decoration: underline;
-  }
-  footer {
-    background: linear-gradient(90deg, #2c2c3e 0%, #34344a 100%);
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0 -8px 32px 0 rgba(44, 21, 77, 0.45), 0 -1.5px 6px 0 #00adb570;
-    position: relative;
-    z-index: 2;
-    color: #f3eaff;
+li {
+  background: rgba(44, 44, 62, 0.85);
+  padding: 6px 15px;
+  border-left: 4px solid #00adb5;
+  border-radius: 6px;
+  font-size: 16px;
+  min-width: 180px;
+  color: #f3eaff;
+  box-shadow: 0 2px 12px 0 #1e1e2f40;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  text-shadow: 1px 1px 4px #00adb5a0, 0 1px 0 #19192a60;
+  cursor: default;
+}
+
+li:hover {
+  background: rgba(0, 173, 181, 0.2);
+  color: #f3eaff;
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 5px 20px 0 #00adb540, 0 1px 4px 0 #19192a60;
+  border-left: 4px solid #00adb5a0;
+  text-shadow: 1px 1px 4px #00adb5a0;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+body {
+  font-size: 16px;
+  padding: 10px;
+  background: linear-gradient(135deg, #1e1e2f 0%, #2c2c3e 100%);
+  color: #f3eaff;
+  line-height: 1.6;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  padding: 0 20px;
+  display: flex;
+}
+
+@media (max-width: 600px) {
+  body {
     font-size: 14px;
-    margin-top: auto; /* para empurrar o footer para baixo */
+    padding: 5px;
   }
-footer a {
-    color: #00adb5;
-    text-decoration: none;
-    transition: color 0.3s ease;
+  .container {
+    max-width: 100%;
+    padding: 0 10px;
   }
-footer a:hover {
-    color: #00adb5a0;
-    text-decoration: underline;
-  }
-footer p {
-    margin: 0;
-    font-size: 14px;
-    color: #f3eaff;
-    text-shadow: 1px 1px 2px #18182470; /* sombra suave no texto do footer */
-  }
-footer span {
-    color: #00adb5;
-    font-weight: bold;
-  }
-footer span:hover {
-    color: #00adb5a0;
-    text-decoration: underline;
-  }
+}
+#contato {
+  background: linear-gradient(120deg, #44475a 0%, #2c2c3e 100%);
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 18px;
+  box-shadow: 0 16px 60px 0 #000e2fbe, 0 1px 8px #00adb580;
+  backdrop-filter: blur(2px);
+  position: relative;
+  z-index: 1;
+  margin-bottom: 50px;
+  text-align: center;
+  color: #f3eaff;
+  padding: 40px;
+  box-shadow: 0 16px 60px 0 rgba(0, 0, 0, 0.2), 0 1px 8px rgba(0, 173, 181, 0.5);
+  backdrop-filter: blur(2px);
+}
+#titulo-contato {
+  font-size: 30px;
+  margin-bottom: 16px;
+  border-bottom: 2px solid #00adb5;
+  color: #f3eaff;
+  text-shadow: 2px 2px 16px #00adb5a0, 1px 1px 3px #19192a86;
+  text-align: center;
+  margin-top: 0;
+  padding-bottom: 16px;
+  font-weight: bold;
+}
+.texto-contato {
+  font-size: 16px;
+  margin-bottom: 16px;
+  color: #e0d7ff;
+  text-shadow: 1px 1px 8px #2c2c3e80;
+  line-height: 1.6;
+  padding-bottom: 16px;
+}
+.texto-contato a {
+  color: #00adb5;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-weight: bold;
+  text-shadow: 1px 1px 4px #00adb5a0, 0 1px 0 #19192a60;
+  font-size: 18px;
+  display: inline-block;
+}
+.texto-contato a:hover {
+  color: #00adb5a0;
+  text-decoration: underline;
+}
+.footer {
+  background: linear-gradient(90deg, #2c2c3e 0%, #34344a 100%);
+  color: #f3eaff;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.2);
+}
