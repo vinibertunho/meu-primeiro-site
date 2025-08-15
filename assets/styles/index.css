@@ -125,6 +125,7 @@ ul {
     width: 100%;
     max-width: 600px;
     margin: auto;
+    padding: 0 20px;
   }
   
   @media (max-width: 600px) {
@@ -134,5 +135,8 @@ ul {
     }
     .container {
       max-width: 100%;
+      padding: 0 10px;
+
     }
   }
+  
