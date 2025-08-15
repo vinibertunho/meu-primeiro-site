@@ -251,3 +251,107 @@ footer p {
   text-shadow: 1px 1px 4px #19192a86;
   text-align: center;
 }
+footer h3 a {
+  color: #00adb5;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 1px 1px 4px #00adb5a0;
+}
+footer h3 a:hover {
+  color: #00adb5a0;
+  text-decoration: underline;
+}
+footer h3 {
+  margin: 10px 0;
+  font-size: 18px;
+  color: #e0d7ff;
+  text-shadow: 1px 1px 4px #19192a86;
+  text-align: center;
+}
+footer h3 a {
+  color: #00adb5;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 1px 1px 4px #00adb5a0;
+}
+footer h3 a:hover {
+  color: #00adb5a0;
+  text-decoration: underline;
+}
+footer h3 {
+  margin: 10px 0;
+  font-size: 18px;
+  color: #e0d7ff;
+  text-shadow: 1px 1px 4px #19192a86;
+  text-align: center;
+}
+
+/* 📱 Responsividade */
+@media (max-width: 1024px) {
+  header {
+    padding: 50px 20px;
+    font-size: 22px;
+  }
+  main {
+    padding: 20px;
+    margin: 15px auto;
+  }
+  #sobre-mim, #meus-hobbies, #contato {
+    width: 90%;
+    padding: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 40px 15px;
+    font-size: 20px;
+  }
+  #titulo-sobre-mim,
+  #titulo-meus-hobbies,
+  #titulo-contato {
+    font-size: 24px;
+  }
+  ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  li {
+    min-width: auto;
+    width: 80%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+    padding: 5px;
+  }
+  header {
+    padding: 30px 10px;
+    font-size: 18px;
+  }
+  main {
+    padding: 15px;
+    margin: 10px auto;
+  }
+  #sobre-mim, #meus-hobbies, #contato {
+    width: 100%;
+    padding: 15px;
+    border-radius: 12px;
+  }
+  #titulo-sobre-mim,
+  #titulo-meus-hobbies,
+  #titulo-contato {
+    font-size: 20px;
+  }
+  li {
+    width: 100%;
+    font-size: 14px;
+  }
+}
